@@ -1,0 +1,333 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+    background: #1e3c72;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #0b57ad;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0px auto;
+    padding: 15px 30px;
+    list-style: none;
+}
+
+.navbar li {
+    margin: 0px;
+}
+
+.role {
+    display: flex;
+    align-items: center;
+}
+
+.roleBadge {
+    background-color: white;
+    color: #1e40af;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.logoutLink {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+/* Admin */
+.pageContainer {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0px 20px;
+}
+
+.mainContent {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+.pageTitle {
+    text-align: center;
+    font-size: 32px;
+    color: #1e40af;
+    margin: 0px 0px 30px 0px;
+    font-weight: 600;
+}
+
+.actionBar {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.createButton {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background-color: #2563eb;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.createButton:hover {
+    background-color: #1d4ed8;
+}
+
+.playersSection {
+    overflow-x: auto;
+}
+
+.playersTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.playersTable thead {
+    background-color: #1e40af;
+}
+
+.playersTable th {
+    padding: 15px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+
+.playersTable tbody tr {
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.playersTable tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+.playersTable td {
+    padding: 15px;
+    font-size: 14px;
+    color: #334155;
+}
+
+.actionCell {
+    white-space: nowrap;
+}
+
+.actionEdit,
+.actionDelete {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.actionEdit {
+    color: white;
+    background-color: #018f0d;
+}
+
+.actionEdit:hover {
+    background-color: #1d4ed8;
+}
+
+.actionDelete {
+    color: white;
+    background-color: #dc2626;
+}
+
+.actionDelete:hover {
+    background-color: #b91c1c;
+}
+
+.editRow {
+    background-color: #eff6ff;
+}
+
+.editFields {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.editField {
+    display: flex;
+    flex-direction: column;
+}
+
+.editField input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #93c5fd;
+    border-radius: 4px;
+}
+
+.editField input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.editActions {
+    display: flex;
+    gap: 10px;
+}
+
+.saveButton {
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: #2563eb;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.saveButton:hover {
+    background-color: #1d4ed8;
+}
+
+.cancelButton {
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2563eb;
+    background-color: white;
+    border: 2px solid #2563eb;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.cancelButton:hover {
+    background-color: #eff6ff;
+}
+
+.popUpOver {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.popUpContent {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3);
+    width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.popUpPlay {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.popUpPlay h2 {
+    margin: 0px;
+    font-size: 24px;
+    color: #1e40af;
+    font-weight: 600;
+}
+
+.popUpClose {
+    font-size: 32px;
+    color: #64748b;
+    text-decoration: none;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.popUpClose:hover {
+    color: #1e40af;
+}
+
+.popUpForm {
+    padding: 30px;
+}
+
+.formGroup {
+    margin-bottom: 20px;
+}
+
+.formGroup label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1e40af;
+}
+
+.formGroup input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #93c5fd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.formGroup input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.popUpActions {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.submitButton {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: #2563eb;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: #1d4ed8;
+}

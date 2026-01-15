@@ -1,0 +1,104 @@
+body {
+    background: #1e3c72;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.loginContainer {
+    background-color: #ffffff;
+    padding: 60px 70px;
+    border-radius: 20px;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.35);
+    width: 300px;
+}
+
+.loginTitle {
+    text-align: center;
+    color: #1e3c72;
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.loginContainer form {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginInput {
+    width: 100%;
+    padding: 18px 24px;
+    margin-bottom: 5px;
+    border: 2px solid #2c4b6e;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.loginInput:focus {
+    border-color: #2a5298;
+    box-shadow: 0 0 0 3px rgba(42, 82, 152, 0.1);
+}
+
+.loginInput::placeholder {
+    color: #a0a0a0;
+}
+
+.loginButton {
+    width: 100%;
+    padding: 18px 24px;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.registerButton{
+    display: block;
+    width: 100%;
+    padding: 18px 24px;
+    margin-top: 16px;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.loginButton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(30, 60, 114, 0.4);
+    background: linear-gradient(135deg, #2a5298 0%, #3d6bb3 100%);
+}
+
+.loginButton:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px rgba(30, 60, 114, 0.4);
+}
+
+.registerButton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(30, 60, 114, 0.4);
+    background: linear-gradient(135deg, #2a5298 0%, #3d6bb3 100%);
+}
+
+.registerButton:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px rgba(30, 60, 114, 0.4);
+}

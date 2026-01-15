@@ -1,0 +1,237 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+    background: #1e3c72;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #0b57ad;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0px auto;
+    padding: 15px 30px;
+    list-style: none;
+}
+
+.navbar li {
+    margin: 0px;
+}
+
+.role {
+    display: flex;
+    align-items: center;
+}
+
+.roleBadge {
+    background-color: white;
+    color: #1e40af;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.logoutLink {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+/* Review Section */
+.pageContainer {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0px 20px;
+}
+
+.mainContent {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+.pageTitle {
+    text-align: center;
+    font-size: 32px;
+    color: #1e40af;
+    margin: 0px 0px 30px 0px;
+    font-weight: 600;
+}
+
+.reviewSection {
+    background-color: #eff6ff;
+    border: 2px solid #2563eb;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.reviewTitle {
+    font-size: 24px;
+    color: #1e40af;
+    margin: 0px 0px 20px 0px;
+    font-weight: 600;
+}
+
+.existingReview {
+    background-color: white;
+    border-left: 4px solid #2563eb;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.existingReview h3 {
+    font-size: 16px;
+    color: #1e40af;
+    margin: 0px 0px 10px 0px;
+    font-weight: 600;
+}
+
+.existingReview p {
+    font-size: 14px;
+    color: #334155;
+    margin: 0px;
+    line-height: 1.6;
+}
+
+.noReview {
+    background-color: white;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.noReview p {
+    margin: 0px;
+    color: #64748b;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.reviewForm {
+    margin-top: 20px;
+}
+
+.reviewForm textarea {
+    width: 100%;
+    height: 120px;
+    padding: 12px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    border: 2px solid #93c5fd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.reviewForm textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.formActions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.submitButton {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: #2563eb;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: #1d4ed8;
+}
+
+.cancelLink {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2563eb;
+    background-color: white;
+    border: 2px solid #2563eb;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.cancelLink:hover {
+    background-color: #eff6ff;
+}
+
+.playersSection {
+    overflow-x: auto;
+}
+
+.playersTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.playersTable thead {
+    background-color: #1e40af;
+}
+
+.playersTable th {
+    padding: 15px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+
+.playersTable tbody tr {
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.playersTable tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+.playersTable td {
+    padding: 15px;
+    font-size: 14px;
+    color: #334155;
+}
+
+.reviewLink {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    background-color: #2563eb;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.review-Link:hover {
+    background-color: #1d4ed8;
+}
